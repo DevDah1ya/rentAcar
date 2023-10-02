@@ -1,0 +1,109 @@
+:root {
+  --darkBlueColor: rgba(73, 153, 237, 255);
+  --lightBLueColor : rgb(202 224 255 / 23%);
+}
+
+.Image {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 12/7;
+  object-fit: cover;
+}
+
+.card {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 24px;
+  border: 0.5px solid rgb(255, 255, 255);
+  background-color: var(--lightBLueColor);
+  box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 10%);
+}
+
+.card h1 {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card .carName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carName span {
+  padding: 4px 8px;
+  align-self: center;
+  border-radius: 14px;
+  border: 3px dotted #2dabf4;
+}
+
+.Details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 25px;
+
+  border-bottom: 1px solid rgba(185, 185, 185, 0.752);
+}
+
+.Details p{
+    font-size: 12px;
+}
+
+.Details div {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+
+.Details svg {
+  justify-self: center;
+  align-self: center;
+}
+
+.price {
+  display: flex;
+  margin: 0 25px;
+  justify-content: space-between;
+}
+
+.price p {
+  font-size: 28px;
+  margin: 12px 0;
+}
+.price span {
+  font-size: 16px;
+}
+
+.rentDiv{
+    display: flex;
+    gap: 20px;
+}
+
+.rentDiv div {
+  height: 25px;
+  border: 0px;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: rgba(219, 234, 250, 255);
+  align-self: center;
+}
+
+.price svg {
+  align-self: center;
+  fill: var(--darkBlueColor);
+}
+
+.price button {
+    justify-self: right;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  align-self: center;
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--darkBlueColor);
+  color: white;
+  font-size: 20px;
+}
